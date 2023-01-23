@@ -1,10 +1,12 @@
 {
-  "name": "src",
+  "name": "tutor-my-library",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "fe": "vite",
+    "build-fe": "vite build",
+    "api": "dotnet run --project .\\src\\api\\api.csproj",
+    "build-api": "dotnet build .\\src\\api\\api.csproj",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
